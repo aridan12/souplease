@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" type="image/png" href="images/logo/soup.png">
+	<title>Souplease - Delivering soup to your doorstep!</title>
+	<link rel="stylesheet" type="text/css" href="css/index-style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<!--Font Awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<script src="https://kit.fontawesome.com/44f557ccce.js"></script>
+	<!--Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!--Using JS alert - "this function isn't within the scope of the project" -->
+	<script src="../js/menu-js.js"></script>
+</head>
+<body>
+	<!-- Navigation Bar -->
+	<nav class="navbar">
+		<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<div class="logo">
+			<img src="images/logo/logo2.png" alt="logo">
+		</div>
+		<ul class="nav-ul">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="includes/about.html">About</a></li>
+			<li><a href="includes/menu.html">Menu</a></li>
+			<li><a href="includes/promotions.html">Promotions</a></li>
+			<li><a href="includes/recipes.html">Recipes</a></li>
+			<li><a href="includes/workshop.php">Workshop</a></li>
+			<li><a href="includes/gallery.html">Gallery</a></li>
+		</ul>
+	</nav>
+	<!-- Welcome to Souplease section -->
+	<section class="welcome-section-bg">
+	<div class="welcome-section">
+		<h1 class="big-title">Cold outside? Feeling a bit off? <span class="italic-strong">Souplease!</span></h1>
+			<section class="white-opacity-welcome">
+				<div class="index-welcome-text">
+					<h1>Welcome to Souplease!</h1>
+					<p>Souplease brings you the tastiest and most healthy soups to your doorstep!</p>
+					<p class="responsive-hide">We are passionate about making high-quality soups for you to love. <br>That is why we are on a never-ending journey to serve people the very best soups.<br>The kind that is worthy of a spot in your cupboard and on your table.<br> Healty and delicious soup that you’re excited to share with your loved ones.</p>
+					<div>
+						<a class="index-welcome-order-button button" href="includes/menu.html">ORDER NOW!</a>
+					</div>
+				</div>
+			</section>
+		</div>
+	</section>
+	<!-- Soup of the month gallery section -->
+	<div class="dark-container">
+		<h1 id="gallery-header">Soups of the month</h1>
+		<section class="gallery-soups">
+			<!-- Soup 1 -->
+			<figure class="soup-fig">
+				<img src="images\slideshow\soups\beef.jpg" alt="Beef Soup">
+				<figcaption class="soup-description">
+					<p class="fig-desc-text">Beef Soup</p>
+					<a href="#" onclick="notSupportedMsg()" class="cart-button button" data-tooltip="Not within the project scope">Add to order</a>
+				</figcaption>
+			</figure>
+			<!-- Soup 2 -->
+			<figure class="soup-fig">
+				<img src="images\slideshow\soups\pea.jpg" alt="Pea Soup">
+				<figcaption class="soup-description">
+					<p class="fig-desc-text">Pea Soup</p>
+					<a href="#" onclick="notSupportedMsg()" class="cart-button button" data-tooltip="Not within the project scope">Add to order</a>
+				</figcaption>
+			</figure>
+			<!-- Soup 3 -->
+			<figure class="soup-fig">
+				<img src="images\slideshow\soups\thai.jpg" alt="Thai Soup">
+				<figcaption class="soup-description">
+					<p class="fig-desc-text">Thai Soup</p>
+					<a href="#" onclick="notSupportedMsg()" class="cart-button button" data-tooltip="Not within the project scope">Add to order</a>
+				</figcaption>
+			</figure>
+			<!-- Soup 4 -->
+			<figure class="soup-fig">
+				<img src="images\slideshow\soups\tomato.jpg" alt="Tomato Soup">
+				<figcaption class="soup-description">
+					<p class="fig-desc-text">Tomato Soup</p>
+					<a href="#" onclick="notSupportedMsg()" class="cart-button button" data-tooltip="Not within the project scope">Add to order</a>
+				</figcaption>
+			</figure>
+			<!-- Soup 5 -->
+			<figure class="soup-fig">
+				<img src="images/slideshow/soups/pumpkin.jpg" alt="Pumpkin Soup">
+				<figcaption class="soup-description">
+					<p class="fig-desc-text">Pumpkin Soup</p>
+					<a href="#" onclick="notSupportedMsg()" class="cart-button button" data-tooltip="Not within the project scope">Add to order</a>
+				</figcaption>
+			</figure>
+			<!-- Soup 6 -->
+			<figure class="soup-fig">
+				<img src="images/slideshow/soups/mushroom.jpg" alt="Mushroom Soup">
+				<figcaption class="soup-description">
+					<p class="fig-desc-text">Mushroom Soup</p>
+					<a href="#" onclick="notSupportedMsg()" class="cart-button button" data-tooltip="Not within the project scope">Add to order</a>
+				</figcaption>
+			</figure>
+		</section>
+	</div>
+	<!-- Customer Reviews Section -->
+	<div class="dark-container">
+		<h1 id="gallery-header">Souplease Customers</h1>
+		<section class="gallery-reviews">
+			<!-- Review 1 -->
+			<div class="review">
+				<div class="head-review">
+					<img src="images\slideshow\reviews\large\david.jpg" alt="customer_img_review">
+				</div>
+				<div class="body-review">
+					<div class="name-review">David A.</div>
+					<div class="location-review">Tel Aviv</div>
+					<div class="rating">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<div class="desc-review">
+						The best soups in the city! Whenever I feel down I quickly find myself ordering from Souplease.
+					</div>
+				</div>
+			</div>
+			<!-- Review 2 -->
+			<div class="review">
+				<div class="head-review">
+					<img src="images\slideshow\reviews\large\tamar.jpg" alt="customer_img_review">
+				</div>
+				<div class="body-review">
+					<div class="name-review">Tamar H.</div>
+					<div class="location-review">Tel Aviv</div>
+					<div class="rating">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star-half"></i>
+					</div>
+					<div class="desc-review">
+						When it's cold outside and you just want to watch TV under a blanket, a warm soup from Souplease is the best thing ever!
+					</div>
+				</div>
+			</div>
+			<!-- Review 3 -->
+			<div class="review">
+				<div class="head-review">
+					<img src="images\slideshow\reviews\large\danny.jpg" alt="customer_img_review">
+				</div>
+				<div class="body-review">
+					<div class="name-review">Danny C.</div>
+					<div class="location-review">Ramat Gan</div>
+					<div class="rating">
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+						<i class="fas fa-star"></i>
+					</div>
+					<div class="desc-review">
+						The pumpkin soup is just the best thing you will ever eat!<br>
+						My girl friend and I order it whenever it's raining!
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<!-- Footer -->
+	<footer id="load-footer" class="dark-grey-bg"></footer>
+	<!-- Loading Footer -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#load-footer").load("includes/footer.html");
+		});
+	</script>
+</body>
+</html>
+

@@ -1,0 +1,15 @@
+#load-footer {
+    padding: 1%;
+	width: 100%;
+	color: #ccc;
+	text-align: center;
+    font-size: 14px;
+}
+
+.dark-grey-bg {
+    background-color: #222831;
+}
+
+.dark-blue-bg {
+    background-color: #383d45;
+}

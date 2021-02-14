@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Roboto', san-serif;
+}
+
+.link {
+	text-decoration: underline;
+	color: #fff;
+}
+
+body {
+	background-color: #383d45;
+}
+
+.recipes-about-section {
+	text-align: center;
+}
+
+.big-title {
+	font-size: 48px;
+	color: #fff;
+	text-shadow: 4px 4px 2px black;
+	margin: 2% 0;
+	text-align: center;
+}
+
+.recipes-about-text {
+	font-size: 18px;
+	color: #fff;
+	margin: 2%;
+	letter-spacing: 1.2px;
+	line-height: 1.3;
+}
+
+/* Recipes Main */
+
+
+.recipes-main {
+	margin: auto;
+	padding: 0 16px;
+	width: 100%;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap; /* making it responsive */
+}
+
+/* Recipe */
+
+.recipe {
+	margin: 0 16px;
+	min-width: 300px;
+	flex: 1;
+}
+
+.recipe-title {
+	font-size: 32px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 3px 3px 0 black;
+	letter-spacing: 1.3px;
+	margin: 5%;
+}
+
+.head-recipe {
+	margin: 10px auto;
+}
+
+.head-recipe img {
+	
+	width: 75%;
+	height: auto;
+	border-radius: 5%;
+	border: 2px solid #fff;
+	box-shadow: 0 0 5px #000;
+}
+
+.body-recipe {
+	color: #fff;
+	background-color: rgb(230, 172, 0);
+	padding: 20px;
+	box-shadow: 3px 3px 3px #000;
+}
+
+.title-recipe-text {
+	font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 5px;
+	text-shadow: 2px 2px 1px black;
+}
+
+.desc-recipe {
+	line-height: 30px;
+	letter-spacing: 1.2px;
+	color: #383838;
+	text-align: left;
+}
+
+/* End of Recipe */
+
+
+/* making it smaller for lower resolutions */
+
+@media (max-width: 860px) {
+	.big-title {
+		font-size: 42px;
+		margin: 10px;
+	}
+	.recipes-about-text {
+		padding: 0 10px;
+		font-size: 16px;
+	}
+	.recipe-title {
+		font-size: 28px;
+	}
+}
+
+@media (max-width: 520px) {
+	.big-title {
+		font-size: 36px;
+	}
+	.recipes-about-text {
+		font-size: 14px;
+	}
+	.recipe-title {
+		font-size: 26px;
+	}
+}
+
+@media (max-width: 420px) {
+	.big-title {
+		font-size: 30px;
+	}
+	.recipes-about-text {
+		font-size: 12px;
+	}
+	.recipe-title {
+		font-size: 24px;
+	}
+}

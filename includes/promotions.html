@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" type="image/png" href="../images/logo/soup.png">
+	<title>Souplease - Promotions</title>
+	<!--Our Style -->
+	<link rel="stylesheet" type="text/css" href="../css/promotion-style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<!--Font Awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<script src="https://kit.fontawesome.com/44f557ccce.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="../js/promotions-js.js"></script>
+	<!--JQuery Plugin-Copy to clipboard -->
+	<script src="../js/jquery-pick-text.js"></script>
+</head>
+<body>
+	<!-- Navigation Bar -->
+	<nav class="load-navbar"></nav>
+	<!-- Promotion Section -->
+	<div class="dark-container">
+		<h1 class="big-title">
+            Promotion Time!
+        </h1>
+		<section class="gallery-soups">
+			<!-- Promotion Item 1 -->
+			<figure class="soup-fig">
+				<img src="../images/slideshow/soups/beef.jpg" alt="Beef Soup">
+				<figcaption class="soup-description">
+					<p class="fig-desc-text">20% OFF Beef Soup</p>
+					<p class="promo-code">Use Promo Code: <span class="cart-button button copyToClipboard"
+						data-tooltip="Copy to clipboard">HAPPY20</span></p>
+					<p class="fig-expire-date-text">Expires: February 28, 2021</p>
+				</figcaption>
+			</figure>
+			<!-- Promotion Item 2 -->
+			<figure class="soup-fig">
+				<img src="../images/slideshow/soups/pea.jpg" alt="Pea Soup">
+				<figcaption class="soup-description">
+					<p class="fig-desc-text">10% OFF on Pea Soup</p>
+					<p class="promo-code">Use Promo Code: <span class="cart-button button copyToClipboard"
+						data-tooltip="Copy to clipboard">PEA10</span></p>
+					<p class="fig-expire-date-text">Expires: March 01, 2021</p>
+				</figcaption>
+			</figure>
+			<!-- Promotion Item 3 -->
+			<figure class="soup-fig">
+				<img src="../images/slideshow/soups/tomato.jpg" alt="Tomato Soup">
+				<figcaption class="soup-description">
+					<p class="fig-desc-text">1+1 Tomato Soup Every Thursday</p>
+					<p class="promo-code">Use Promo Code: <span class="cart-button button copyToClipboard"
+						data-tooltip="Copy to clipboard">ONE+ONE</span></p>
+					<p class="fig-expire-date-text">Expires: April 16, 2021</p>
+				</figcaption>
+			</figure>
+			<!-- Promotion Item 4 -->
+			<figure class="soup-fig">
+				<img src="../images/slideshow/soups/mushroom.jpg" alt="Mushroom Soup">
+				<figcaption class="soup-description">
+					<p class="fig-desc-text">10% OFF Mushroom Soup</p>
+					<p class="promo-code">Use Promo Code: <span class="cart-button button copyToClipboard"
+						data-tooltip="Copy to clipboard">HAPPY10</span></p>
+					<p class="fig-expire-date-text">Expires: March 07, 2021</p>
+				</figcaption>
+			</figure>
+			<!-- Promotion Item 5 -->
+			<figure class="soup-fig">
+				<img src="..\images\slideshow\soups\get-well.jpeg" alt="Get well Soup">
+				<figcaption class="soup-description">
+					<p class="fig-desc-text">1+1 On Get Well Soup Every Sunday</p>
+					<p class="promo-code">Use Promo Code: <span class="cart-button button copyToClipboard"
+						data-tooltip="Copy to clipboard">GET2WELL</span></p>
+					<p class="fig-expire-date-text">Expires: March 15, 2021</p>
+				</figcaption>
+			</figure>
+			<!-- Promotion Item 6 -->
+			<figure class="soup-fig">
+				<img src="..\images\slideshow\soups\delivery.jpg" alt="Free Delivery">
+				<figcaption class="soup-description">
+					<p class="fig-desc-text">Free Delivery</p>
+					<p class="promo-code">Use Promo Code: <span class="cart-button button copyToClipboard"
+						data-tooltip="Copy to clipboard">FREERIDE</span></p>
+					<p class="fig-expire-date-text">Expires: April 01, 2021</p>
+				</figcaption>
+			</figure>
+		</section>
+	</div>
+	<!-- News Letter section -->
+	<div class="dark-container">
+		<section class="newsletter-section">
+			<div class="newsletter-text">
+			  Join our newsletter and benefit from special promotions!
+			</div>
+			<form class="signup-form" id="newsletter">
+			  <input class="input-newsletter" id="input-email" required id="email" type="email" placeholder="Your e-mail">
+			  <button onclick="checkIfValidEmail()" form="newsletter" type="submit" class="btn" id="signup-submit">Get offers</button>
+			</form>
+
+			<!-- Canvas -->
+			<img id="confetti" src="..\images\background\confetti-1.png" alt="confetti-signup">
+			<canvas id="confettiCanvas">
+			Unfortunately, your browser does not support the HTML5 canvas tag.
+			</canvas>
+		  </section>
+	</div>
+	<!-- Footer -->
+	<footer id="load-footer" class="dark-blue-bg"></footer>
+	<!-- Loading Footer and Header -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$(".load-navbar").load("navbar.html");
+			$("#load-footer").load("footer.html");
+		});
+		// JQuery Script - Copy to clipboard //
+		$('.copyToClipboard').on('click', function(e) {
+  			$(e.currentTarget).pickText();
+		});
+	</script>
+</body>
+</html>
+

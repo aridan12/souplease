@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', san-serif;
+}
+
+.big-title {
+	font-size: 48px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 4px 4px 2px black;
+	margin: 2% 0;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* mobile */
+
+@media screen and (max-width: 480px) {
+    figure.soup-fig img {
+        left: 0;
+        right: 0;
+        width: 55%;
+        height: auto;
+    }
+
+    figcaption.soup-description {
+        left: 4px;
+        right: 0;
+        width: 55%;
+        height: auto;
+    }
+
+    /* Centering soup of the month when only 1 image appears */
+    .gallery-soups {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+    .big-title {
+		font-size: 30px;
+	}
+}
+
+/* Centering soup of the month when only 1 image appears */
+
+@media (max-width: 1244px) {
+    .gallery-soups {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+@media (max-width: 1080px) {
+    .big-title {
+		font-size: 42px;
+	}
+}
+
+.button {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 10px;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+
+/* Soup Gallery */
+
+.dark-container {
+    display: block;
+    background-color: #383d45;
+    color: white;
+    padding: 10px 20px;
+    margin: auto;
+}
+
+/* Promotions Section */
+
+.gallery-soups {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    grid-gap: 5px;
+}
+
+.fig-desc-text {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px;
+    font-size: 25px;
+    letter-spacing: 1.3px
+}
+
+.fig-expire-date-text {
+    color: #fff;
+    text-shadow: 2px 2px 3px red;
+    padding: 10px 10px;
+    letter-spacing: 1.3px;
+}
+
+.cart-button {
+    margin: 3px;
+    color: black;
+    background-color: #ccc;
+    cursor: copy;
+}
+
+.cart-button:hover {
+	color: #000;
+	background-color: rgb(230, 172, 0);
+	border-color: #000;
+}
+
+.soup-fig {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.soup-description {
+    position: absolute;
+    bottom: 20px;
+    width: 600px;
+    left: 4px;
+    right: 0;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Image styling */
+
+.soup-fig img {
+    width: 600px;
+    height: 360px;
+    margin: 4px;
+    border: 4px dotted #ccc;
+}
+
+.soup-fig img:hover {
+    border: 4px dotted rgb(230, 172, 0);
+}
+
+/* News Letter */
+
+.newsletter-section {
+    text-align: center;
+}
+
+.newsletter-text {
+    font-size: 32px;
+    text-shadow: 3px 3px 0 black;
+    padding-bottom: 10px;
+    letter-spacing: 1.3px;
+    margin-bottom: 10px;
+}
+
+.input-newsletter {
+    display: inline-block;
+    width: 250px;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #383d45;
+}
+
+/* Sign up Button */
+
+.btn {
+    font-size: 15px;
+    border: 1px solid  #383d45;
+    width: 100px;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.btn:hover {
+    background-color: #62b464;
+}
+
+/* Copy to clipboard tooltip */
+
+.cart-button::before,
+.cart-button::after {
+	/* variables for fast adjustment */
+  --scale: 0;
+  --arrow-size: 10px;
+  --tooltip-color: #383d45;
+
+  position: absolute;
+  top: 40px;
+  left: 60%;
+  transform: translateX(-50%) translateY(var(--translate-y, 0)) scale(var(--scale));
+  transition: 300ms transform;
+  transform-origin: bottom center;
+}
+
+.cart-button::before {
+  --translate-y: calc(-100% - var(--arrow-size));
+
+  content: attr(data-tooltip);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  width: max-content;
+  max-width: 100%;
+  background: var(--tooltip-color);
+}
+
+.cart-button:hover::before,
+.cart-button:hover::after {
+  --scale: 1;
+}
+
+.cart-button::after {
+  --translate-y: calc(-1 * var(--arrow-size));
+  content: '';
+  border: var(--arrow-size) solid transparent;
+  border-top-color: var(--tooltip-color);
+  transform-origin: top center;
+}
+
+/* End of Tool Tip */
+
+/* canvas styling */
+
+#confetti {
+    display: none; /* hiding the image, displaying it via canvas (js) */
+}

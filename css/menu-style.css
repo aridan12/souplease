@@ -1,0 +1,188 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Roboto', san-serif;
+}
+
+.link {
+	text-decoration: underline;
+}
+
+body {
+	background-color: #383d45;
+}
+
+/* Main - Menu */
+
+.menu-container {
+    margin-top: 2%;
+}
+
+table, th, td {
+    border: 3px solid #222831;
+	border-collapse: collapse;
+	background-color: #383d45;
+}
+
+table {
+    margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.menu-elem-img img {
+	width: 400px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+
+
+.menu-elem-text {
+	width: 400px;
+	text-align: center;
+}
+
+/* Dish name */
+
+.menu-elem-title {
+	margin-bottom: 6%;
+	color: #fff;
+}
+
+
+/* Price style */
+
+.menu-elem-price {
+	display: inline-block;
+	margin-bottom: 6%;
+	color: #fff;
+	background-color:rgba(230, 172, 0, 0.9);
+	padding: 1.5%;
+	border-radius: 50%;
+	text-shadow: 1px 1px 1px black;
+}
+
+/* Descrption of the dish */
+
+.menu-elem-desc {
+	margin-bottom: 6%;
+	color: #fff;
+}
+
+.button {
+	color: #fff;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 8px;
+	margin: 5px;
+	border-radius: 10px;
+	background-color: #383d45;
+	border: 2px solid #fff;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+.cart-button {
+	margin: 3px;
+}
+
+.cart-button:hover {
+	cursor: pointer;
+	color: #000;
+	background-color: rgb(230, 172, 0);
+	border-color: #000;
+}
+
+.big-title {
+	font-size: 48px;
+	color: #fff;
+	text-align: center;
+	text-shadow: 4px 4px 2px black;
+	margin: 2% 0;
+}
+
+
+/* START: Lowering menu size for smaller screens */
+
+@media (max-width: 860px) {
+	.menu-elem-img img {
+		width: 300px;
+	}
+	.menu-elem-text {
+		width: 300px;
+	}
+	.big-title {
+		font-size: 42px;
+	}
+}
+
+@media (max-width: 630px) {
+	.menu-elem-img img {
+		width: 250px;
+	}
+	.menu-elem-text {
+		width: 250px;
+	}
+	.menu-elem-title {
+		font-size: 18px;
+	}
+	.menu-elem-price {
+		font-size: 15px;
+	}
+	.menu-elem-desc {
+		font-size: 14px;
+	}
+	.button {
+		padding: 5px;
+		font-size: 12px;
+	}
+
+}
+
+@media (max-width: 520px) {
+	.menu-elem-img img {
+		width: 200px;
+	}
+	.menu-elem-text {
+		width: 200px;
+	}
+	.button {
+		padding: 3px;
+		font-size: 10px;
+	}
+	.big-title {
+		font-size: 36px;
+	}
+}
+
+@media (max-width: 420px) {
+	.menu-elem-img img {
+		width: 150px;
+	}
+	.menu-elem-text {
+		width: 150px;
+	}
+	.menu-elem-title {
+		font-size: 14px;
+	}
+	.menu-elem-price {
+		font-size: 12px;
+	}
+	.menu-elem-desc {
+		font-size: 11px;
+	}
+	.button {
+		padding: 3px;
+		font-size: 8px;
+	}
+	.big-title {
+		font-size: 30px;
+	}
+}
+
+/* FINISH: Lowering menu size for smaller screens */
+

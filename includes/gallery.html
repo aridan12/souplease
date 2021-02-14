@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" type="image/png" href="../images/logo/soup.png">
+	<title>Souplease - Gallery</title>
+	<link rel="stylesheet" type="text/css" href="../css/gallery-style.css">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<!--Font Awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+	<script src="https://kit.fontawesome.com/44f557ccce.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+</head>
+
+<body>
+	<!-- Navigation Bar -->
+	<nav class="load-navbar"></nav>
+	<section class="gallery-about-section">
+		<h1 class="big-title">
+			Friends and Customers
+		</h1>
+		<p class="gallery-about-text">
+			Please share with us your experience from <span class=italic-bold>Souplease</span> and we will upload it to our friends and customers board.<br>
+			Feel free to <a class="link" href="mailto:info@souplease.com">mail us</a> if you want to share your
+			experience. Every month we will randomly choose one <span class=italic-bold>Souplease</span> customer,<br>
+			who shared an experience with us and provide him or her with a unique promotion!
+		</p>
+	</section>
+	<!-- Gallery Section -->
+	<section class="gallery-container">
+		<img src="../images/gallery/1.jpg" alt="eating-soup">
+		<img src="../images/gallery/3.jpg" alt="eating-soup">
+		<img src="../images/gallery/4.jpg" alt="eating-soup">
+		<img src="../images/gallery/5.jpg" alt="eating-soup">
+		<div class="winner-container">
+			<img src="../images/gallery/6.jpg" alt="eating-soup">
+			<div class="winner-text">Tommy, 3 years old is the winner of the month!<br>
+			<span class="small-text">Congratulations! An email was sent to your parents :)</span></div>
+		</div>
+		<img src="../images/gallery/7.jpg" alt="eating-soup">
+		<img src="../images/gallery/8.jpg" alt="eating-soup">
+		<img src="../images/gallery/11.jpg" alt="eating-soup">
+		<img src="../images/gallery/12.jpg" alt="eating-soup">
+	</section>
+	<!-- Footer -->
+	<footer id="load-footer"></footer>
+	<script type="text/javascript">
+		$(window).on("load", function() {
+			$(".load-navbar").load("navbar.html");
+			$("#load-footer").load("footer.html");
+		})
+	</script>
+</body>
+</html>
